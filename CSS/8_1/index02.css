@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 1500vh;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.box1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: relative;
+}
+
+.box2{
+    background-color: orange;
+    top: 40px;
+    z-index: 1;
+
+}
+
+.box3{
+    background-color: yellow;
+    top: 100px;
+    z-index: 8;
+}
+
+.box4{
+    background-color: green;
+    z-index: 10;
+}
+
+.minibox{
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: pink;
+    position: fixed;
+    bottom: 1px;
+    text-align: center;
+    padding: 25px 0;
+
+}

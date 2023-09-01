@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200vw;
+    height: 500vh;
+    background-color: gray;
+    position: relative;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    /* absolute 기준?
+        -조상 relative가 있으면 body 기준
+        -조상 relative가 없으면 해당 요소 기준 */4
+    transform: skewY(15deg);
+}
+
+.beach1{
+    top: 200px;
+    left: 300px;
+    z-index: 3;
+}
+
+.beach2{
+    top: 200px;
+    left: 500px;
+    z-index: 2;
+}
+
+.beach3{
+    top: 200px;
+    left: 700px;
+    z-index: 1;
+}

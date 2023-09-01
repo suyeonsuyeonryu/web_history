@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지 실습</title>
+</head>
+<body>
+    <h1>회원가입 페이지</h1>
+    <hr>
+
+    <form action="suyeon">
+
+        <label for="useID">아이디</label>
+        <input type="text" placeholder="아이디 입력" id="useID" autofocus>
+
+        <button type="submit">아이디 확인</button>
+
+        <br />
+        <label for="usePW">비밀번호</label>
+        <input type="password" placeholder="비밀번호 입력" id="usePW" required>
+        <br />
+        <label for="pwcheck">비밀번호 확인</label>
+        <input type="password" placeholder="비밀번호 확인" id="pwcheck" required>
+        <button type="submit">비밀번호 확인</button>
+        <br />
+
+        </form>
+
+        <hr>
+
+        <form action="suyeon2">
+            <label for="name">이름</label>
+            <input type="text" id="name" value="홍길동">
+            <br />
+
+            <label for="birth">생년월일</label>
+            <input type="date" id="birth">
+            <br />
+
+            <label for="graduate">졸업 예정일
+                <select>
+                    <option value="2022년">2022년</option>
+                    <option value="2023년">2023년</option>
+                    <option value="2024년">2024년</option>
+                </select>
+                년
+                <select>
+                    <option value="2월">2월</option>
+                    <option value="8월">8월</option>
+                </select>
+                월
+                <select>
+                    <option value="20일">20일</option>
+                    <option value="21일">21일</option>
+                    <option value="22일">22일</option>
+                </select>
+                일
+            </label>
+
+            <br>
+
+            <label for="eye">눈알 갯수
+                <select disabled="true">
+                    <option value="2개">2개</option>
+                </select>
+            </label>
+
+            <hr>
+
+
+
+            <label for="gender">성별</label>
+            <input type="radio" id="woman" name="check" checked/>
+            <label for="woman">여자</label>
+
+            <input type="radio" id="man" name="check" />
+            <label for="man">남자</label>
+            
+            <input type="radio" id="etc" name="check" />
+            <label for="etc">기타</label>
+
+            <br>
+            
+            <label for="college">단과대학</label>
+
+            <input type="checkbox" id="c1">
+            <label for="c1">정통대</label>
+
+            <input type="checkbox" id="c2">
+            <label for="c2">자과대</label>
+
+            <input type="checkbox" id="c3">
+            <label for="c3">공대</label>
+
+            <input type="checkbox" id="c4">
+            <label for="c4">인문대</label>
+
+            <input type="checkbox" id="c5">
+            <label for="c5">사과대</label>
+
+        </form>
+
+            <hr>
+
+            <form action="suyeon3">
+                <label for="email">이메일
+                <input type="email" placeholder="이메일 입력" id="email" required>
+                @
+                </label>
+                <input type="email" placeholder="naver.com" id="email">
+
+                <select>
+                    <option value="naver.com">네이버</option>
+                    <option value="daum.com">다음</option>
+                    <option value="gmail.com">구글</option>
+                </select>
+
+                <br>
+
+                <label for="email">이메일2
+                <input type="email" placeholder="이메일 입력" id="email">
+
+            </form>
+
+            <hr>
+
+            <form action="suyeon4">
+                <label for="tel">전화 번호</label>
+                <input type="tel" id="tel" placeholder="010-0000-0000">
+                <button type="submit">인증번호 받기</button>
+
+                <br>
+
+                <label for="number">인증 번호</label>
+                <input type="text" id="number" placeholder="인증 번호 입력">
+                <button type="submit">확인</button>
+
+            </form>
+
+            <hr>
+
+            <form action="suyeon5">
+                <label for="favorite">관심사</label>
+
+                <input type="checkbox" id="f1">
+                <label for="f1">IT</label>
+
+                <input type="checkbox" id="f2">
+                <label for="f2">보안</label>
+
+                <input type="checkbox" id="f3">
+                <label for="f3">웹</label>
+
+                <input type="checkbox" id="f4">
+                <label for="f4">서버</label>
+
+                <br>
+
+                <label for="image">본인 사진</label>
+                <input type="file" id="image">
+
+                <label for="memo"></label>
+                <textarea id="memo" placeholder="자기소개" cols="100" rows="4"></textarea>
+                
+                <label for="memo"></label>
+                <textarea id="memo" placeholder="해당 페이지에서 누락된 내용은 없는지 확인해주세요. 감사합니다." cols="100" rows="1" readonly></textarea>
+
+            </form>
+
+                <hr>
+
+            <form action="suyeon5">
+                <label for="understand">오늘의 수업 이해도</label>
+                <input type="range" id="understand">
+
+                <br>
+
+                <button type="submit">제출하기</button>
+
+    </form>
+</body>
+</html>

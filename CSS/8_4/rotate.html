@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .origin{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 50px;
+        }
+        .origin > div{
+            background: orange;
+            width: 100px;
+            height: 100px;
+        }
+        #rotate1{
+            transform: rotate(40deg);
+        }
+        #rotate2{
+            transform: rotate(-40deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="origin">
+            <div id="rotate1"></div>
+        </div>
+
+        <div class="origin">
+            <div id="rotate2"></div>
+        </div>
+    </div>
+</body>
+</html>

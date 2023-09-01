@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .origin{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 50px;
+        }
+        .origin > div{
+            background: orange;
+            width: 100px;
+            height: 100px;
+        }
+        #rotatex{
+            transform: rotateX(55deg);
+        }
+
+        #rotatey{
+            transform: rotateY(55deg);  
+        }
+
+        #rotatez{
+            transform: rotateZ(55deg);  
+        }
+
+        #rotatexyz{
+            transform: rotate3d(2.5, 1.2, -1.5, 55deg);  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="origin">
+            <div id="rotatex"></div>
+        </div>
+
+        <div class="origin">
+            <div id="rotatey"></div>
+        </div>
+
+        <div class="origin">
+            <div id="rotatez"></div>
+        </div>
+
+        <div class="origin">
+            <div id="rotatexyz"></div>
+        </div>
+    </div>
+</body>
+</html>

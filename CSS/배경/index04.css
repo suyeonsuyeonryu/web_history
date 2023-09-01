@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 2000px;
+    background-image: url('./img/bg2.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+div{
+    border: 20px solid rgba(204, 204, 204, 0.493);
+    width: 400px;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-image: url('./img/bg3.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+#bg1{
+    background-origin: border-box;
+}
+
+#bg2{
+    background-origin: padding-box;
+}
+
+#bg3{
+    background-origin: content-box;
+}

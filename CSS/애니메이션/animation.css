@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: cyan;
+    animation-name: moveX;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+}
+
+@keyframes moveX{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 200px;
+    }
+    50%{
+        left: 400px;
+    }
+    75%{
+        left: 200px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.bounceball1{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+    position: relative;
+
+    /*애니메이션 연결
+    animation-name: ball1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: alternate;
+    */
+
+    /*애니메이션 축약형*/
+    /*animation: name durtaion timing-function delay iteration-count direction*/
+    animation: ball1 1s ease-out infinite alternate;
+}
+@keyframes ball1{
+    from{
+        top: 300px;
+    }to{
+        top: 50px;
+    }
+}
+
+.bounceball2{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    border-radius: 50%;
+    position: fixed;
+    /*브라우저 창 기준으로 bottom에서 튕겨지도록*/
+    /*animation: ball3 2s infinite alternate*/
+    animation-name: ball2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball2{
+    from, to{
+        bottom: 0;
+        animation-timing-function: ease-out; /*정상속도->천천히 속도 줄임*/
+    }
+    50%{
+        bottom: 300px;
+        animation-timing-function: ease-in;
+    }
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-color: pink;
+    animation-name: box2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes box2{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 200px;
+    }
+    50%{
+        top: 200px;
+    }
+    75%{
+        right: 0px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+/*
+animation 포로퍼티
+    -animation-name: @keyframes에 지정한 애니메이션 이름
+        1. from~to
+        from{
+            rotate(45deg)
+        }to{
+            rotate(0
+        }
+        2. 숫자(%)
+        0%{
+            내용
+        }
+        25%{
+            내용
+        }
+
+        -animation-duration: 애니메이션 한 사이클이 얼마(몇초)동안 일어날 것인지(단위: s, ms)
+        -animation-delay: 요소가 그려지고 난 후, 언제 애니메이션을 시작할 건지(단위: s, ms)
+        -animation-iteration-count: 애니메이션 반복 횟수(기본값: 1)
+            -정수로 횟수 지정 or infinite
+        -animation-timing-function: 중간중간 어떤 시간으로 상태를 변화시킬지
+        -animation-difection: 애니메이션이 끝나고 난 후, 반복될 때 진행할 방향 지정
+*/
+
+/*
+        animation 설명
+
+        @keyframes: 애니메이션이 바뀌는 지점을 지정
+        animation-name: @keyframes로 설정해놓은 이름 설정
+        animation-iteration-count: 애니메이션의 반복 횟수
+        animation-timing-function: 키프레임의 전환 형태
+        animation-duration: 애니메이션의 실행시간을 지정(ex. 10초 동안 애니메이션 진행)
+        animation-delay: 애니메이션의 시작 시간을 지정
+        animation-direction: 애니메이션을 종료한 뒤 처음부터 시작할지, 역방향으로 진행할지 지정
+
+        <animation-direction>
+            -animation-diretion: normal; #애니메이션을 from에서 to로 진행(기본값)
+            -animation-direction: reverse; #애니메이션을 to에서 from으로, 원래 방향과는 반대로 진행
+            -animation-direction: alternatme: #홀수 번쨰는 normal, 짝수 번째는 reverse로 진행
+            -animation-direction: aternate-reverse: #홀수 번째는 reverse, 짝수 번째는 normal로 진행
+
+        <animation-iteration-count>
+            -1. 숫자: 애니메이션의 반복 횟수를 정한다.
+            -2. infinite: 애니메이션을 무한 반복한다.
+
+        <animation-timing-function>
+        #http://www.tcpschool.com/examples/tryit/tryhtml.php?filename=css3_transform_animation_07
+        -animation-timing-function: linear;
+        -animation-timing-function: ease;
+        -animation-timing-function: ease-in;
+        -animation-timing-function: ease-out;
+        -animation-timing-function: ease-in-out;
+
+*/

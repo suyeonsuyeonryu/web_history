@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skew2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .black-box{
+            width: 500px;
+            height: 50px;
+            background-color: black;
+            margin: 50px 100px;
+            transform: skewX(20deg)
+        }
+        h1{
+            color: white;
+            text-align: center;
+            transform: skewX(-40deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="black-box">
+            <h1>CSS 함수 익히기</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

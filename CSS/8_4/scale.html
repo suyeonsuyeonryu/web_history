@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform: translate</title>
+    <style>
+                *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .origin{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 50px;
+        }
+
+        .origin > div{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        #translatex:hover{
+            transform: translatex(50px);
+        }
+
+        #translatex{
+            transform: translatey(50px);
+        }
+
+        #translatex{
+            transform: translate(10px 20px);
+        }
+
+        #scalex:hover{
+            transform: scaleX(2);
+        }
+
+        #scaley:hover{
+            transform: scaleX(2);
+        }
+
+        
+        #scalexy:hover{
+            transform: scaleX(2);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="origin">
+            <div id="scaleX"></div>
+    </div>
+
+    <div class="origin">
+        <div id="scaley"></div>
+    </div>
+
+    <div class="origin">
+        <div id="scalexy"></div>
+    </div>
+</body>
+</html>

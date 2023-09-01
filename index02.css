@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background-color: skyblue;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.green{
+    background-color: green;
+    color: black;
+}
+
+.red{
+    background-color: orange;
+    color: white;
+}
