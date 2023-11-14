@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형 그라데이션 예제1</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .elipse{
+            background-color: red;
+            background: radial-gradient(white, yellow, red);
+        }
+        .circle{
+            background-color: red;
+            background: radial-gradient(circle, white, yellow, red);
+        }
+    </style>
+</head>
+<body>
+    <div class="elipse"></div>
+    <div class="circle"></div>
+</body>
+</html>
